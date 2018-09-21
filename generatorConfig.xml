@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/testssm" userId="root" password="" />
+    <!-- 实体类 -->
+    <javaModelGenerator targetPackage="org.lanqiao.entity" targetProject="testssm" />
+    <!-- xml映射文件 -->
+    <sqlMapGenerator targetPackage="org.lanqiao.mapper" targetProject="testssm" />
+    <!-- 接口 -->
+    <javaClientGenerator targetPackage="org.lanqiao.mapper" targetProject="testssm" type="XMLMAPPER" />
+    <table schema="" tableName="user" ></table>
+  </context>
+</generatorConfiguration>
